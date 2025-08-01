@@ -12,4 +12,8 @@ gpub(){
 	git push
 }
 
+word() {
+    "/mnt/c/Program Files/Microsoft Office/root/Office16/WINWORD.EXE" "$(wslpath -w "$1")"
+}
+
 
