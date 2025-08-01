@@ -1,0 +1,12 @@
+
+npp(){
+	/mnt/C/Program\ Files/Notepad++/notepad++.exe "$@"
+}
+
+gpub(){
+	git add .
+	git commit -m "$1"
+	git push
+}
+
+
