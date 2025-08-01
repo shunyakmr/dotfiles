@@ -1,6 +1,9 @@
+# Lists of Function
 
 npp(){
-	/mnt/C/Program\ Files/Notepad++/notepad++.exe "$@"
+	local realfile
+	realfile=$(readlink -f "$1")
+	"/mnt/c/Program Files/Notepad++/notepad++.exe" "$(wslpath -w "$realfile")"
 }
 
 gpub(){
