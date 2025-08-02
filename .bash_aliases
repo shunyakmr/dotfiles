@@ -14,6 +14,8 @@ npp() {
         realfile=$(readlink -f "$1")
         "/mnt/c/Program Files/Notepad++/notepad++.exe" "$(wslpath -w "$realfile")"
     fi
+
+    echo "HELLO"
 }
 
 word() {
@@ -23,4 +25,3 @@ word() {
         "/mnt/c/Program Files/Microsoft Office/root/Office16/WINWORD.EXE" "$(wslpath -w "$1")"
     fi
 }
-
